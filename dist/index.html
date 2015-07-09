@@ -1,0 +1,82 @@
+<html>
+
+    <head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+        <link href="css/roboto.min.css" rel="stylesheet">
+        <link href="css/material.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+
+    </head>
+
+    <body>
+
+        <!-- APP STARTS HERE -->
+
+         <!-- Header -->
+         <div class="jumbotron">
+            <h2>Health Data Monitoring App</h2>
+        </div>
+
+        <!-- input for entering the doctor's ID-->
+
+        <div class="inputs">
+            <input class="form-control floating-label" placeholder="Enter doctor's Id here">
+        </div>
+
+        <!-- Submit button comes here -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <!--  The real time data will be displayed here-->
+       <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Real time patient tracker</h3>
+            </div>
+            <div class="panel-body">
+                <p>0</p>
+            </div>
+        </div>
+
+        <!-- data update -->
+        <div class="well well-sm">
+            Latest update recieved for pt xyx at 00 beats per minute
+        </div>
+
+        <!-- Fetch History -->
+        <a href="javascript:void(0)" class="btn btn-info btn-raised">Fetch history</a>
+
+        <!-- History comes here -->
+        <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+                <span class="help-block">History comes here.</span>
+            </div>
+        </div>
+
+
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+        </script>
+
+    </body>
+
+</html>
